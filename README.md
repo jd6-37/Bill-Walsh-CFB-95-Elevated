@@ -55,10 +55,10 @@ Timeouts still reset everyone to 100% in both.
 ## How to patch
 
 1. Get an unmodified USA ROM that matches the checksums under [Original ROM required](#original-rom-required).
-2. Download one `.bps` patch and apply it with any BPS patcher:
-   - **[Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/)** in your browser: choose your ROM, choose the patch, click *Apply patch*, save the result.
-   - **[Floating IPS (Flips)](https://github.com/Alcaro/Flips)**: *Apply Patch*, pick the patch, pick your ROM, save.
-   - **RetroArch soft-patching** (Genesis Plus GX core): put the `.bps` next to your unzipped ROM and rename it to the same name as the ROM, e.g. `Bill Walsh College Football 95 (USA).md` + `Bill Walsh College Football 95 (USA).bps`. RetroArch applies it when the game loads and your ROM file stays unchanged.
+2. Download one `.bps` patch and apply it. **Pick just one of these three options** (any BPS patcher works):
+   - **[Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/)**, in your browser: choose your ROM, choose the patch, click *Apply patch*, save the result.
+   - **Or [Floating IPS (Flips)](https://github.com/Alcaro/Flips)**: *Apply Patch*, pick the patch, pick your ROM, save.
+   - **Or RetroArch soft-patching** (Genesis Plus GX core), no patched file needed: put the `.bps` next to your unzipped ROM and rename it to the same name as the ROM, e.g. `Bill Walsh College Football 95 (USA).md` + `Bill Walsh College Football 95 (USA).bps`. RetroArch applies it when the game loads and your ROM file stays unchanged.
 3. Always patch the original ROM, not an already patched one. The patcher checks your ROM and refuses a different version.
 
 ## Game Genie codes (fatigue only, no patching)
