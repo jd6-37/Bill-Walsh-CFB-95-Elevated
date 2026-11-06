@@ -1,0 +1,6 @@
+# Keep ROMs out of this repository
+*.bin
+*.gen
+*.smd
+*.md
+!README.md
