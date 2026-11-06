@@ -24,7 +24,7 @@ In my opinion, Bill Walsh College Football '95 for the Sega Genesis has the grea
 
 ## Features
 
-- **Fatigue fix.** In the original game a running back loses about 27% energy per carry and barely recovers during a drive; only a timeout brings players back. Pick one of three versions (below).
+- **Fatigue fix.** In the original game a running back loses about 27% energy per carry and barely recovers during a drive; only a timeout brings players back. Pick one of two versions (below).
 - **More explosive plays.** In the original game a ball carrier starts losing speed right away and is down to lineman speed after a few seconds, so breakaway runs crawl after a few yards. The slowdown on long runs and runs after the catch is now reduced, which allows more explosive plays and breakaway touchdowns. This applies to human- and CPU-controlled teams. The ball carrier keeps full speed for about the first 1.5 seconds, then slows down, faster the more tired he is:
 
   | Energy (roster screen) | Slowdown after the first 1.5 s |
@@ -39,15 +39,14 @@ In my opinion, Bill Walsh College Football '95 for the Sega Genesis has the grea
 
 ## Which patch?
 
-All three include every fix above; only the fatigue setting differs.
+Both include every fix above; only the fatigue setting differs.
 
 | Patch | Fatigue |
 |---|---|
 | `Bill Walsh College Football 95 (USA) [fixed-fatigue] v5.bps` | **Recommended.** Half the original drain per play, 4x faster recovery. Roughly 91% after 1 carry, 83% after 2 straight carries. |
-| `Bill Walsh College Football 95 (USA) [fixed-fatigue-light] v5.bps` | About 47% of the original drain, 4x faster recovery. Roughly 94% after 1 carry, 86% after 2 straight carries. |
 | `Bill Walsh College Football 95 (USA) [no-fatigue] v5.bps` | Energy never drops. |
 
-Timeouts still reset everyone to 100% in all three.
+Timeouts still reset everyone to 100% in both.
 
 ## How to patch
 
@@ -76,13 +75,8 @@ RZWB-66VG+R17A-N6YY
 RZWB-66VG+BD7A-NF66+FS7A-NYY8+AD7A-NY7C+JD7T-NH7C
 ```
 
-**Fixed fatigue light** (15 codes), the same as the `[fixed-fatigue-light]` patch's fatigue setting:
-```
-RZWB-66VG+9X7A-NBY6+SD7A-NAE8+KD7A-NB7A+FS7A-NYZC+JM7A-NAFE+AX7A-NY7G+9D7A-NCZJ+R57A-NF7L+FS7A-PEPN+SM7A-NAFR+GD7A-PDZT+KM7A-PAFW+A57A-NJ7Y+JD7T-NH7C
-```
-
 - **In RetroArch:** go to *Quick Menu → Cheats*, add a new cheat, paste the whole line (codes joined with `+`) as its code, then enable it and apply the changes.
-- **On a real Game Genie:** it holds 5 codes, so no fatigue and fixed fatigue fit, but fixed fatigue light only works in emulators.
+- **On a real Game Genie:** both lines fit (it holds 5 codes).
 
 ## Original ROM required
 
@@ -99,7 +93,6 @@ RZWB-66VG+9X7A-NBY6+SD7A-NAE8+KD7A-NB7A+FS7A-NYZC+JM7A-NAFE+AX7A-NY7G+9D7A-NCZJ+
 | Patch | CRC32 | SHA-1 | Genesis header checksum |
 |---|---|---|---|
 | `[fixed-fatigue]` | `9911AB86` | `bef8048a2dca09bd586c0dcd48187ac670e455a8` | `7924` |
-| `[fixed-fatigue-light]` | `DF3E68ED` | `6a6d54f3048dbe0d354ed2670d882a19de20e44d` | `F883` |
 | `[no-fatigue]` | `DAE625DA` | `1052120b581ef94c7d0d448d6b95ec3a606cc434` | `343D` |
 
 Patch files:
@@ -107,13 +100,12 @@ Patch files:
 | File | Size | SHA-256 |
 |---|---|---|
 | `Bill Walsh College Football 95 (USA) [fixed-fatigue] v5.bps` | 292 bytes | `9f33c9306bfaf6101044b7ec3e4b2cacd2b90976b868c852c7d3d94f6b017fdf` |
-| `Bill Walsh College Football 95 (USA) [fixed-fatigue-light] v5.bps` | 296 bytes | `fbedd0c25333af457365141bf4a5b37bb2e577fdce6f3d90b9cdaeda1e895f2d` |
 | `Bill Walsh College Football 95 (USA) [no-fatigue] v5.bps` | 286 bytes | `f3e249a19c6cd860ed6fc2663490939d2a8862ecf89396ed29af990ac3b3c66d` |
 
 ## Changelog
 
 ### v5 (2026-11-06), first public release
-- Fatigue fix in three versions (fixed, light, none).
+- Fatigue fix in two versions (fixed, none).
 - Reduced slowdown on long runs and runs after the catch (human and CPU teams): 1.5-second burst, then a fade that depends on the runner's energy.
 - 2-point conversion turnover kickoff fix.
 - Game Genie codes for the fatigue fix (fatigue only).
@@ -125,7 +117,7 @@ Versions v1–v4 were private test builds.
 For anyone digging into the ROM (68000 addresses):
 
 - **Fatigue**:
-  - AddFatigue (`0x06FA94`) gains are halved (fixed), scaled ×120/256 (light) or disabled (no fatigue).
+  - AddFatigue (`0x06FA94`) gains are halved (fixed) or disabled (no fatigue).
   - Recovery (`0x06FBA2`) is 4x the original, which subtracted half the elapsed seconds at each snap.
 - **Run slowdown**:
   - In the original, a random tick at `0x075EC0` costs the ball carrier 1 speed point plus 10 fatigue while his speed is above 6.
@@ -141,7 +133,7 @@ For anyone digging into the ROM (68000 addresses):
 - Play-tested in RetroArch (Genesis Plus GX core).
 - Verified with scripted headless runs:
   - Each patch applied to the original ROM reproduces the ROM above byte for byte.
-  - All three boot and play.
+  - Both boot and play.
   - Fatigue numbers are averages of measured carries.
   - The slowdown rule matched on every tick checked, and it also applies to CPU ball carriers (checked in a CPU-vs-CPU game).
 - Limits:
