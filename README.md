@@ -35,6 +35,7 @@ In my opinion, Bill Walsh College Football '95 for the Sega Genesis has the grea
 
   He also tires during the run, so a long run fades faster toward the end. Fatigue itself builds exactly as in the original game.
 - **2-point conversion bug fix.** In the original game, if the defense recovered a fumble on a conversion try, the team that got scored on had to kick off. Now the scoring team kicks off.
+- **Title screen.** REBALANCED appears in red under '95, so you can tell the patched game from the original at a glance.
 - The patched ROMs already have the game's built-in checksum corrected, so they don't need a Game Genie master code.
 
 ## Which patch?
@@ -43,8 +44,8 @@ Both include every fix above; only the fatigue setting differs.
 
 | Patch | Fatigue |
 |---|---|
-| `Bill Walsh College Football 95 (USA) [fixed-fatigue] v5.bps` | **Recommended.** Half the original drain per play, 4x faster recovery. Roughly 91% after 1 carry, 83% after 2 straight carries. |
-| `Bill Walsh College Football 95 (USA) [no-fatigue] v5.bps` | Energy never drops. |
+| `Bill_Walsh_College_Football_95_Fixed_Fatigue_Rebalanced_v1_0.bps` | **Recommended.** Half the original drain per play, 4x faster recovery. Roughly 91% after 1 carry, 83% after 2 straight carries. |
+| `Bill_Walsh_College_Football_95_No_Fatigue_Rebalanced_v1_0.bps` | Energy never drops. |
 
 Timeouts still reset everyone to 100% in both.
 
@@ -54,7 +55,7 @@ Timeouts still reset everyone to 100% in both.
 2. Download one `.bps` patch and apply it with any BPS patcher:
    - **[Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/)** in your browser: choose your ROM, choose the patch, click *Apply patch*, save the result.
    - **[Floating IPS (Flips)](https://github.com/Alcaro/Flips)**: *Apply Patch*, pick the patch, pick your ROM, save.
-   - **RetroArch soft-patching** (Genesis Plus GX core): put the `.bps` next to your unzipped ROM and give it the same name, e.g. `Bill Walsh College Football 95 (USA).md` + `Bill Walsh College Football 95 (USA).bps`. RetroArch applies it when the game loads and your ROM file stays unchanged.
+   - **RetroArch soft-patching** (Genesis Plus GX core): put the `.bps` next to your unzipped ROM and rename it to the same name as the ROM, e.g. `Bill Walsh College Football 95 (USA).md` + `Bill Walsh College Football 95 (USA).bps`. RetroArch applies it when the game loads and your ROM file stays unchanged.
 3. Always patch the original ROM, not an already patched one. The patcher checks your ROM and refuses a different version.
 
 ## Game Genie codes (fatigue only, no patching)
@@ -70,7 +71,7 @@ If you only want to remove or fix fatigue, you can use Game Genie codes on the o
 RZWB-66VG+R17A-N6YY
 ```
 
-**Fixed fatigue** (5 codes), the same as the `[fixed-fatigue]` patch's fatigue setting:
+**Fixed fatigue** (5 codes), the same fatigue setting as the Fixed Fatigue patch:
 ```
 RZWB-66VG+BD7A-NF66+FS7A-NYY8+AD7A-NY7C+JD7T-NH7C
 ```
@@ -92,25 +93,27 @@ RZWB-66VG+BD7A-NF66+FS7A-NYY8+AD7A-NY7C+JD7T-NH7C
 
 | Patch | CRC32 | SHA-1 | Genesis header checksum |
 |---|---|---|---|
-| `[fixed-fatigue]` | `9911AB86` | `bef8048a2dca09bd586c0dcd48187ac670e455a8` | `7924` |
-| `[no-fatigue]` | `DAE625DA` | `1052120b581ef94c7d0d448d6b95ec3a606cc434` | `343D` |
+| Fixed Fatigue | `85C4A7CE` | `9e8f79f431c47cd52008f6315a3cb9e1bdd6a37e` | `92A1` |
+| No Fatigue | `72DCC65E` | `c012fbd0fb0db59648f2d9bff78acc29d9f63ea0` | `4DBB` |
 
 Patch files:
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `Bill Walsh College Football 95 (USA) [fixed-fatigue] v5.bps` | 292 bytes | `9f33c9306bfaf6101044b7ec3e4b2cacd2b90976b868c852c7d3d94f6b017fdf` |
-| `Bill Walsh College Football 95 (USA) [no-fatigue] v5.bps` | 286 bytes | `f3e249a19c6cd860ed6fc2663490939d2a8862ecf89396ed29af990ac3b3c66d` |
+| `Bill_Walsh_College_Football_95_Fixed_Fatigue_Rebalanced_v1_0.bps` | 1,670 bytes | `91e15e0d3cca7b0c8f9319df863106eb788637afcea118724e40763a796e0d22` |
+| `Bill_Walsh_College_Football_95_No_Fatigue_Rebalanced_v1_0.bps` | 1,664 bytes | `f74170f9d6c1d011653bc1792b6561f0b1ef95d7cd93a634080b258668279b44` |
 
 ## Changelog
 
-### v5 (2026-11-06), first public release
+### v1.0 (2026-11-06), first release
 - Fatigue fix in two versions (fixed, none).
 - Reduced slowdown on long runs and runs after the catch (human and CPU teams): 1.5-second burst, then a fade that depends on the runner's energy.
 - 2-point conversion turnover kickoff fix.
+- Title screen: REBALANCED under '95; the logo moved up 16 pixels to make room.
 - Game Genie codes for the fatigue fix (fatigue only).
 
-Versions v1–v4 were private test builds.
+### Betas
+The `v5` patches that were here before v1.0 were betas. They play the same as v1.0 but have the original title screen. Earlier builds were private test builds.
 
 ## Technical notes
 
@@ -126,6 +129,9 @@ For anyone digging into the ROM (68000 addresses):
 - **2-point fix**:
   - The fumble-recovery code (`0x075AA8`) flips possession even on a try; the interception path already checks for tries.
   - Hooks at `0x06FC38`, `0x06E588` and `0x06E4EC` (code at `0x1F0240`) count possession flips during the try and give the ball back to the scoring team before the kickoff is set up.
+- **Title screen**:
+  - The title image (`0x17C114`: photo, logo cutouts and palettes) is copied to `0x1F1000`, with the logo moved up 16 pixels and REBALANCED drawn in.
+  - The title code's two references to it (`0x078D70`, `0x078DA0`) point to the copy, and the color bands behind the logo letters are drawn 2 tile rows higher (`0x078DCA`).
 - **Checksum**: the EA checksum constant at `0x1E6430` and the Sega header checksum are recomputed.
 
 ## Testing
@@ -133,7 +139,7 @@ For anyone digging into the ROM (68000 addresses):
 - Play-tested in RetroArch (Genesis Plus GX core).
 - Verified with scripted headless runs:
   - Each patch applied to the original ROM reproduces the ROM above byte for byte.
-  - Both boot and play.
+  - Both boot, show the new title screen and play.
   - Fatigue numbers are averages of measured carries.
   - The slowdown rule matched on every tick checked, and it also applies to CPU ball carriers (checked in a CPU-vs-CPU game).
 - Limits:
