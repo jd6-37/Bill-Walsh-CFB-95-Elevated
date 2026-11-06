@@ -4,6 +4,9 @@ A gameplay patch for **Bill Walsh College Football '95** (Sega Genesis / Mega Dr
 
 This repository contains BPS patches only, no ROM. You need your own copy of the game.
 
+<img width="400" height="280" alt="title_screen" src="https://github.com/user-attachments/assets/656df20a-b19d-4628-acbb-40791c7e902d" />
+
+
 ## Contents
 
 - [Why Bill Walsh '95?](#why-bill-walsh-95)
