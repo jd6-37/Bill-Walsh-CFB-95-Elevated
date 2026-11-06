@@ -4,6 +4,24 @@ A gameplay patch for **Bill Walsh College Football '95** (Sega Genesis / Mega Dr
 
 This repository contains BPS patches only, no ROM. You need your own copy of the game.
 
+## Contents
+
+- [Why Bill Walsh '95?](#why-bill-walsh-95)
+- [Features](#features)
+- [Which patch?](#which-patch)
+- [How to patch](#how-to-patch)
+- [Game Genie codes (fatigue only, no patching)](#game-genie-codes-fatigue-only-no-patching)
+- [Original ROM required](#original-rom-required)
+- [Patched ROMs](#patched-roms)
+- [Changelog](#changelog)
+- [Technical notes](#technical-notes)
+- [Testing](#testing)
+- [Credits](#credits)
+
+## Why Bill Walsh '95?
+
+In my opinion, Bill Walsh College Football '95 for the Sega Genesis has the greatest gameplay of any 16-bit football game. It has the fun physics and player models of Madden '94, and it introduced windowless passing for the first time in an EA Sports football game. Later games (Madden '95 and College Football USA '96) changed the player models and gameplay significantly and, in my opinion, aren't as fun to play. The only real problem with BW95 was its broken fatigue system, which this mod fixes.
+
 ## Features
 
 - **Fatigue fix.** In the original game a running back loses about 27% energy per carry and barely recovers during a drive; only a timeout brings players back. Pick one of three versions (below).
