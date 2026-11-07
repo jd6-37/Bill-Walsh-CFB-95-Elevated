@@ -1,4 +1,4 @@
-# Bill Walsh College Football '95 Revived
+# Bill Walsh College Football '95 Elevated
 
 A gameplay patch for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). It fixes the broken fatigue system, cuts the slowdown on long runs for more explosive plays and breakaway touchdowns, and fixes a kickoff bug after 2-point conversions.
 
