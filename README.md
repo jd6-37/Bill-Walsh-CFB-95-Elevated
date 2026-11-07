@@ -1,8 +1,10 @@
-# Bill Walsh College Football '95 Rebalanced
+# Bill Walsh College Football '95 Revived
 
 A gameplay patch for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). It fixes the broken fatigue system, cuts the slowdown on long runs for more explosive plays and breakaway touchdowns, and fixes a kickoff bug after 2-point conversions.
 
 This repository contains BPS patches only, no ROM. You need your own copy of the game.
+
+The mod was first released as *Bill Walsh College Football '95 Rebalanced*, so the v1.0 patch files and title screen still carry that name.
 
 <img width="400" height="280" alt="title_screen" src="https://github.com/user-attachments/assets/656df20a-b19d-4628-acbb-40791c7e902d" />
 
