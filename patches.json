@@ -1,0 +1,55 @@
+{
+  "app": "bill-walsh-cfb-95-elevated",
+  "tool": "patches",
+  "version": 1,
+  "original": {
+    "name": "Bill Walsh College Football 95 (USA)",
+    "sha1": "2ae000f45474b3cdedd08eeca7f5e195959ba689"
+  },
+  "contents": [
+    {
+      "id": "fixes",
+      "label": "Fatigue fix and gameplay fixes",
+      "about": "The fatigue fix, more explosive plays and the 2-point conversion fix."
+    }
+  ],
+  "fatigue": [
+    {
+      "id": "fixed",
+      "label": "Fixed Fatigue",
+      "about": "Recommended. Half the original drain per play and 4x faster recovery."
+    },
+    {
+      "id": "none",
+      "label": "No Fatigue",
+      "about": "Energy never drops."
+    }
+  ],
+  "releases": [
+    {
+      "version": "v1.0",
+      "name": "Rebalanced v1.0",
+      "date": "2026-11-06",
+      "patches": [
+        {
+          "content": "fixes",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 Rebalanced v1.0 (Fixed Fatigue)",
+          "file": "Bill_Walsh_College_Football_95_Fixed_Fatigue_Rebalanced_v1_0.bps",
+          "size": 1670,
+          "sha256": "91e15e0d3cca7b0c8f9319df863106eb788637afcea118724e40763a796e0d22",
+          "rom": "9e8f79f431c47cd52008f6315a3cb9e1bdd6a37e"
+        },
+        {
+          "content": "fixes",
+          "fatigue": "none",
+          "name": "Bill Walsh College Football '95 Rebalanced v1.0 (No Fatigue)",
+          "file": "Bill_Walsh_College_Football_95_No_Fatigue_Rebalanced_v1_0.bps",
+          "size": 1664,
+          "sha256": "f74170f9d6c1d011653bc1792b6561f0b1ef95d7cd93a634080b258668279b44",
+          "rom": "c012fbd0fb0db59648f2d9bff78acc29d9f63ea0"
+        }
+      ]
+    }
+  ]
+}

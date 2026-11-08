@@ -138,6 +138,7 @@ For anyone digging into the ROM (68000 addresses):
   - The title image (`0x17C114`: photo, logo cutouts and palettes) is copied to `0x1F1000`, with the logo moved up 16 pixels and REBALANCED drawn in.
   - The title code's two references to it (`0x078D70`, `0x078DA0`) point to the copy, and the color bands behind the logo letters are drawn 2 tile rows higher (`0x078DCA`).
 - **Checksum**: the EA checksum constant at `0x1E6430` and the Sega header checksum are recomputed.
+- **Patch list**: `patches.json` lists the released patches for the [Genesis CFB Toolkit](https://genesis-cfb-toolkit.vercel.app), whose Patch tab reads it and the `.bps` files straight from this repo's `main` branch. Update it with every release: the newest release goes first, with each patch's file, size, SHA-256 and the SHA-1 of the patched ROM. Older releases stay listed without a `file`, so the toolkit still recognizes their ROMs. Format: [docs/patches.md](https://github.com/jd6-37/Genesis-CFB-Toolkit/blob/main/docs/patches.md) in the toolkit's repo.
 
 ## Testing
 
