@@ -10,22 +10,22 @@
     {
       "id": "elevated",
       "label": "Elevated",
-      "about": "Every Elevated feature, with the original teams and 1994 rosters."
+      "about": "Every Elevated feature, including Fixed Fatigue, with the original teams and 1994 rosters."
     },
     {
       "id": "elevated-2026",
       "label": "Elevated: 2026 Season Edition",
-      "about": "Every Elevated feature, plus the 2026 teams, conferences and rosters."
+      "about": "Every Elevated feature, including Fixed Fatigue, plus the 2026 teams, conferences and rosters."
     },
     {
       "id": "fixes",
       "label": "Fatigue fix and gameplay fixes",
-      "about": "The fatigue fix, more explosive plays and the 2-point conversion fix. Original title screen."
+      "about": "Only the fatigue fix, more explosive plays and the 2-point conversion fix. Original teams, 1994 rosters and title screen."
     },
     {
       "id": "fatigue",
       "label": "Fatigue only",
-      "about": "Only the fatigue setting. Original title screen."
+      "about": "Only the fatigue fix (or no fatigue). No other gameplay changes. Original teams, 1994 rosters and title screen."
     }
   ],
   "fatigue": [
@@ -37,7 +37,7 @@
     {
       "id": "none",
       "label": "No Fatigue",
-      "about": "Energy never drops."
+      "about": "Energy never drops. Nothing else changes: the original game with 1994 rosters and no other gameplay changes."
     }
   ],
   "releases": [
