@@ -117,7 +117,6 @@ ELEVATED appears in red under '95, so you can tell the patched game from the ori
 ### Known limitations
 
 - Swapped-in teams still play the fight song of the team they replaced.
-- If you swap teams in the Elevated edition with the Genesis CFB Toolkit, Game Setup still shows the OVRs of the teams that were replaced, and the season sim uses their ratings.
 
 ## Controls
 
