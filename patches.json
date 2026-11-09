@@ -1,0 +1,116 @@
+{
+  "app": "bill-walsh-cfb-95-elevated",
+  "tool": "patches",
+  "version": 1,
+  "original": {
+    "name": "Bill Walsh College Football 95 (USA)",
+    "sha1": "2ae000f45474b3cdedd08eeca7f5e195959ba689"
+  },
+  "contents": [
+    {
+      "id": "elevated",
+      "label": "Elevated",
+      "about": "Every Elevated feature, with the original teams and 1994 rosters."
+    },
+    {
+      "id": "elevated-2026",
+      "label": "Elevated: 2026 Season Edition",
+      "about": "Every Elevated feature, plus the 2026 teams, conferences and rosters."
+    },
+    {
+      "id": "fixes",
+      "label": "Fatigue fix and gameplay fixes",
+      "about": "The fatigue fix, more explosive plays and the 2-point conversion fix. Original title screen."
+    },
+    {
+      "id": "fatigue",
+      "label": "Fatigue only",
+      "about": "Only the fatigue setting. Original title screen."
+    }
+  ],
+  "fatigue": [
+    {
+      "id": "fixed",
+      "label": "Fixed Fatigue",
+      "about": "Recommended. Every player tires from what he does on the field and recovers between plays."
+    },
+    {
+      "id": "none",
+      "label": "No Fatigue",
+      "about": "Energy never drops."
+    }
+  ],
+  "releases": [
+    {
+      "version": "v1.1.0",
+      "name": "Elevated v1.1.0",
+      "date": "2026-11-09",
+      "patches": [
+        {
+          "content": "elevated",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 Elevated v1.1.0",
+          "file": "patches/Bill_Walsh_College_Football_95_Elevated_v1_1_0.bps",
+          "size": 131603,
+          "sha256": "f5effe877e11a83c6cf3d705f09ff4e2589c9b07715e3c832288e2e03ada8587",
+          "rom": "04ea053c6c868c59991d183bef20aee81c0e0edf"
+        },
+        {
+          "content": "elevated-2026",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 Elevated: 2026 Season Edition v1.1.0",
+          "file": "patches/Bill_Walsh_College_Football_95_Elevated_2026_Season_v1_1_0.bps",
+          "size": 178500,
+          "sha256": "ff64954fbf62bc7aa099f4f8c9573ba2e1ecb4b71ccabada6d751e9a6d39312b",
+          "rom": "345d21044e1038bfd79b28766df7adc1a6dd71ef"
+        },
+        {
+          "content": "fixes",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 v1.1.0 (Fixed Fatigue + Fixes)",
+          "file": "patches/Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v1_1_0.bps",
+          "size": 567,
+          "sha256": "b517a95c857d281ab872531b45a222c6cc1512c8f322671bfb4665ac9711bc8e",
+          "rom": "1ee2aeb1fd2a09080dc90e8f5728e5c9cfe03907"
+        },
+        {
+          "content": "fatigue",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 v1.1.0 (Fixed Fatigue)",
+          "file": "patches/Bill_Walsh_College_Football_95_Fixed_Fatigue_v1_1_0.bps",
+          "size": 331,
+          "sha256": "73c28af91eec51b98300e95651a7f7695a675054f3b6dc3e21260dcff8f8249b",
+          "rom": "433ee808e77dc4254ac520682bad9e647584ae92"
+        },
+        {
+          "content": "fatigue",
+          "fatigue": "none",
+          "name": "Bill Walsh College Football '95 v1.1.0 (No Fatigue)",
+          "file": "patches/Bill_Walsh_College_Football_95_No_Fatigue_v1_1_0.bps",
+          "size": 44,
+          "sha256": "9005796a80bf7c397f2039b6386454ef7b37c0570c2dc5bda33282964b452d73",
+          "rom": "8ce1c5e64ee7cad54cac5df76470fe1ae994698c"
+        }
+      ]
+    },
+    {
+      "version": "v1.0",
+      "name": "Rebalanced v1.0",
+      "date": "2026-11-06",
+      "patches": [
+        {
+          "content": "fixes",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 Rebalanced v1.0 (Fixed Fatigue)",
+          "rom": "9e8f79f431c47cd52008f6315a3cb9e1bdd6a37e"
+        },
+        {
+          "content": "fixes",
+          "fatigue": "none",
+          "name": "Bill Walsh College Football '95 Rebalanced v1.0 (No Fatigue)",
+          "rom": "c012fbd0fb0db59648f2d9bff78acc29d9f63ea0"
+        }
+      ]
+    }
+  ]
+}
