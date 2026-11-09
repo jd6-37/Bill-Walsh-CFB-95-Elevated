@@ -64,19 +64,38 @@ The patches are in the [`patches`](patches) folder. Both Elevated editions use F
 - **Two new Shotgun plays:**
   - **RPO**: press B within about a second of the snap to pitch to the HB. Otherwise the QB keeps it and rolls out right, and you pass as usual. The CPU pitches half the time.
   - **HB SWING** (replaces HB SHOV.PASS): the HB swings across in front of the QB and up the sideline.
+
+  <img width="400" height="280" alt="Shotgun plays page with HB SWING and RPO" src="images/rpo_hb_swing.png" />
+
 - **Flip Play.** A FLIP PLAY tile replaces Instant Replay on the play-call screen. It mirrors the formation, every assignment and the play diagrams.
+
+  <img width="400" height="280" alt="Play-call screen with FLIP PLAY on and the formations mirrored" src="images/flip_play.png" />
+
 - **Pre-snap motion.** Send a back or receiver in motion before the snap: toward the middle he crosses the formation, toward the sideline he takes a short motion, and you can bring him back. Your selected defender follows him until you move the defender yourself, and CPU defenders in man coverage go with him.
+
+  <img width="800" alt="Pre-snap motion: the receiver picked for motion (left) and the same receiver crossing the formation, with his defender following (right)" src="images/motion.png" />
 
 ### 6-button gamepad (Elevated)
 
 These need a 6-button gamepad. With a 3-button gamepad the game plays exactly as before.
 
-- **5-receiver passing.** X and Y throw to the 4th and 5th receivers, with their own icons. A/B/C work as before.
+- **5-receiver XY passing.** X and Y throw to the 4th and 5th receivers, with their own icons. A/B/C work as before.
+
+  <img width="400" height="280" alt="Pass play with the A, B, C, X and Y receiver icons" src="images/xy_passing.png" />
+
 - **Flip at the line.** Open the audible menu with A, then press X: the play flips and the players run to their mirrored spots.
 - **Pre-snap info**, while you hold the button before the snap:
   - **Y on offense:** the called play's art, and an icon with the jersey number over each receiver.
+
+    <img width="400" height="280" alt="Y on offense: the play art and the receiver icons with jersey numbers" src="images/presnap_offense.png" />
+
   - **Y on defense:** the defensive call's art, and a marker over each defender: R (rush), Z (zone), M (man) or S (spy).
+
+    <img width="400" height="280" alt="Y on defense: the defensive call's art and the R, Z, M and S markers" src="images/presnap_defense.png" />
+
   - **Z:** energy bars over every player.
+
+    <img width="400" height="280" alt="Z: energy bars over every player" src="images/presnap_energy.png" />
 
 ### CPU and difficulty (Elevated)
 
@@ -98,12 +117,15 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays exactly as
 - **Season-sim fix.** When the original game simulated CPU-vs-CPU season games, it read each team's offense and defense ratings backwards, so a great defense scored points and a great offense kept the other team's score down. Fixed.
 - **Team OFF/DEF ratings on Game Setup**, under each team's logo, as modern-style overall ratings (OVR). In the Elevated edition they come from EA's original team ratings; in the 2026 Season Edition from the 2026 rosters.
 
-<img width="400" height="280" alt="Game Setup with the OFF/DEF ratings and the Difficulty row" src="images/game_setup.png" />
+<img width="400" height="280" alt="Game Setup with the OFF/DEF ratings and the Difficulty row set to Champion" src="images/game_setup.png" />
 
 ### 2026 Season Edition only
 
 - **11 teams from College Football USA '97:** Kentucky, Indiana, Iowa, UCLA, Utah, Houston, Texas Tech, Oklahoma State, Wake Forest, Ole Miss and Oregon, in place of Pitt, Army, Kansas State, Wisconsin, Arizona, California, Stanford, Washington State, Boston College, Virginia and West Virginia.
 - **2026 conferences**, renamed SEC (11 teams), Big Ten (10), Big 12 (7, with Air Force) and ACC (8, with Notre Dame and Navy). Season schedules are random.
+
+  <img width="800" alt="Season rankings for the SEC, Big Ten, Big 12 and ACC after a simulated first week" src="images/conferences_2026.png" />
+
 - **2026 rosters**, converted from EA Sports College Football 27's player ratings (Week 9 update).
 - **CPU offense and defense styles** that follow each team's 2026 scheme.
 - **Team ratings from the 2026 rosters**, for the OVRs on Game Setup and the season sim.
