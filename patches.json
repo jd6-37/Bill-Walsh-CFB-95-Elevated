@@ -20,12 +20,12 @@
     {
       "id": "fixes",
       "label": "Fatigue fix and gameplay fixes",
-      "about": "The fatigue fix, more explosive plays and the 2-point conversion fix. Original title screen."
+      "about": "Only the fatigue fix, more explosive plays and the 2-point conversion fix. Original teams, 1994 rosters and title screen."
     },
     {
       "id": "fatigue",
       "label": "Fatigue only",
-      "about": "Only the fatigue setting. Original title screen."
+      "about": "Only the fatigue fix (or no fatigue). No other gameplay changes. Original teams, 1994 rosters and title screen."
     }
   ],
   "fatigue": [
@@ -37,7 +37,7 @@
     {
       "id": "none",
       "label": "No Fatigue",
-      "about": "Energy never drops."
+      "about": "Energy never drops. Nothing else changes: the original game with 1994 rosters and no other gameplay changes."
     }
   ],
   "releases": [
