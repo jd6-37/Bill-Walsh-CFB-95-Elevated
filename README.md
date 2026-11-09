@@ -129,6 +129,7 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays exactly as
 - **2026 rosters**, converted from EA Sports College Football 27's player ratings (Week 9 update).
 - **CPU offense and defense styles** that follow each team's 2026 scheme.
 - **Team ratings from the 2026 rosters**, for the OVRs on Game Setup and the season sim.
+- **New Walsh Reports for all 36 teams**, written for 2026. Each offense and defense scouting report names the key players with their jersey numbers (the rosters have no names), with season facts through October 2026.
 - **College Football USA '97 logos for every team**, so all logos on Game Setup are the same size. Swapped-in teams get their own home weather.
 - **New title art:** Malachi Toney of Miami in the 2026 home uniform replaces Bill Walsh's portrait.
 
@@ -203,7 +204,7 @@ RZWB-66VG+BD7A-NF66+FS7A-NYY8+AD7A-NY7C+JD7T-NH7C
 | Patch | CRC32 | SHA-1 | Genesis header checksum |
 |---|---|---|---|
 | Elevated | `97C351B6` | `04ea053c6c868c59991d183bef20aee81c0e0edf` | `FCFC` |
-| Elevated: 2026 Season Edition | `09781B52` | `345d21044e1038bfd79b28766df7adc1a6dd71ef` | `87FE` |
+| Elevated: 2026 Season Edition | `84EAA350` | `7ac949a3af6e172c615b3d0b4eb1dbff9f52a39b` | `056E` |
 | Fixed Fatigue + Fixes | `03A9F4B5` | `1ee2aeb1fd2a09080dc90e8f5728e5c9cfe03907` | `FA08` |
 | Fixed Fatigue | `FB633059` | `433ee808e77dc4254ac520682bad9e647584ae92` | `76E7` |
 | No Fatigue | `46E349F8` | `8ce1c5e64ee7cad54cac5df76470fe1ae994698c` | `B11D` |
@@ -213,7 +214,7 @@ Patch files:
 | File | Size | SHA-256 |
 |---|---|---|
 | `Bill_Walsh_College_Football_95_Elevated_v1_1_0.bps` | 131,603 bytes | `f5effe877e11a83c6cf3d705f09ff4e2589c9b07715e3c832288e2e03ada8587` |
-| `Bill_Walsh_College_Football_95_Elevated_2026_Season_v1_1_0.bps` | 178,500 bytes | `ff64954fbf62bc7aa099f4f8c9573ba2e1ecb4b71ccabada6d751e9a6d39312b` |
+| `Bill_Walsh_College_Football_95_Elevated_2026_Season_v1_1_0.bps` | 190,074 bytes | `e4db5a8abef15900ecc664c8d4aff1e8826fe242e60e48de1d72b0acf5b314ce` |
 | `Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v1_1_0.bps` | 567 bytes | `b517a95c857d281ab872531b45a222c6cc1512c8f322671bfb4665ac9711bc8e` |
 | `Bill_Walsh_College_Football_95_Fixed_Fatigue_v1_1_0.bps` | 331 bytes | `73c28af91eec51b98300e95651a7f7695a675054f3b6dc3e21260dcff8f8249b` |
 | `Bill_Walsh_College_Football_95_No_Fatigue_v1_1_0.bps` | 44 bytes | `9005796a80bf7c397f2039b6386454ef7b37c0570c2dc5bda33282964b452d73` |
@@ -228,7 +229,7 @@ Patch files:
 - 6-button gamepad: 5-receiver passing, flip at the line, pre-snap info (Y) and energy (Z).
 - Difficulty levels (Normal, Smart, Elite, Champion), smarter 4th downs, reworked CPU defenses, VEER for the CPU.
 - Season-sim fix (offense and defense ratings were read backwards) and team OFF/DEF ratings on Game Setup.
-- 2026 Season Edition: 11 teams from CF97, 2026 conferences, 2026 rosters from CFB 27 ratings, team styles, CF97 logos for every team, new title art.
+- 2026 Season Edition: 11 teams from CF97, 2026 conferences, 2026 rosters from CFB 27 ratings, team styles, new Walsh Reports, CF97 logos for every team, new title art.
 - Title screen: ELEVATED.
 - The patches moved to the `patches` folder, with `patches.json` for the Genesis CFB Toolkit.
 
@@ -263,6 +264,7 @@ For anyone digging into the ROM (68000 addresses):
 - **CPU**: the offense rule set (4th downs) is a copy at `0x106E7A`; the difficulty levels add a Game Setup row (menu at `0x10E000`, code from `0x10E6C0`), CPU rating boosts at the snap, and their own play-calling rule sets.
 - **Season sim**: `0x06F1A8` `move.w $2(a1),d1 ; move.w $4(a1),d2` → `move.w $4(a1),d1 ; move.w $2(a1),d2`, so a team scores by its offense (+2 of its ratings group) against the opponent's defense (+4).
 - **OFF/DEF on Game Setup**: hook `0x0783A0` (code at `0x10E900`) draws the text under each logo. The shown OVRs come from a table at `0x10DFB0` ("OVR1", then 36 × {OFF, DEF} bytes by team slot); the sim reads the 0-100 ratings words.
+- **Walsh Reports** (2026 Season Edition): the report text (`0x05B2E0`-`0x061066`, 78 paragraphs ending in CR; team slot n's offense is paragraph 6 + 2n, its defense 7 + 2n) is rewritten in place, the same way the Genesis CFB Toolkit's Walsh Report editor does it. The report box is 20 characters wide, so no word is longer than 20 characters.
 - **Title screen**: the title image (`0x17C114`) is copied to `0x1F1000`, with the logo moved up and ELEVATED drawn in; the title code's two references to it (`0x078D70`, `0x078DA0`) point to the copy. In the 2026 Season Edition the portrait's cells and palette line 0 hold the new art.
 - **Checksum**: the EA checksum constant at `0x1E6430` and the Sega header checksum are recomputed.
 - **Patch list**: `patches.json` lists the released patches for the [Genesis CFB Toolkit](https://genesis-cfb-toolkit.vercel.app), whose Patch tab reads it and the `.bps` files straight from this repo's `main` branch. Update it with every release: the newest release goes first, with each patch's file, size, SHA-256 and the SHA-1 of the patched ROM. Older releases stay listed without a `file`, so the toolkit still recognizes their ROMs. Format: [docs/patches.md](https://github.com/jd6-37/Genesis-CFB-Toolkit/blob/main/docs/patches.md) in the toolkit's repo.

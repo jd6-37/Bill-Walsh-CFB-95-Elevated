@@ -60,9 +60,9 @@
           "fatigue": "fixed",
           "name": "Bill Walsh College Football '95 Elevated: 2026 Season Edition v1.1.0",
           "file": "patches/Bill_Walsh_College_Football_95_Elevated_2026_Season_v1_1_0.bps",
-          "size": 178500,
-          "sha256": "ff64954fbf62bc7aa099f4f8c9573ba2e1ecb4b71ccabada6d751e9a6d39312b",
-          "rom": "345d21044e1038bfd79b28766df7adc1a6dd71ef"
+          "size": 190074,
+          "sha256": "e4db5a8abef15900ecc664c8d4aff1e8826fe242e60e48de1d72b0acf5b314ce",
+          "rom": "7ac949a3af6e172c615b3d0b4eb1dbff9f52a39b"
         },
         {
           "content": "fixes",
