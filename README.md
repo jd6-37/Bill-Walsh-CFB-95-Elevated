@@ -1,6 +1,6 @@
 # Bill Walsh College Football '95 Elevated
 
-A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). It keeps the game's feel, fixes the original game's bugs, and adds the plays, controls, CPU smarts and season mode it was missing.
+A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). It keeps the game's feel, fixes the original game's bugs, and adds the plays, controls and CPU smarts it was missing. The **2026 Season Edition** brings **all 138 FBS teams with 2026 rosters**, the 2026 conferences, and a full season mode with conference title games and the College Football Playoff.
 
 - **Fixed fatigue system!** Every player tires from what he does on the field and recovers between plays. In the original game, ball carriers tired extremely quickly and barely recovered during a drive, so after one or two carries your best players were essentially unusable for the rest of the drive unless you called a timeout. This fix is why the mod was started, and on its own it drastically improves the game.
 - **The original game's bugs, fixed:** the wrong team kicking off after a 2-point try turnover, pitches that land behind fast backs, and a season sim that reads offense and defense backwards.
