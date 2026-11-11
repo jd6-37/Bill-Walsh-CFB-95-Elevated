@@ -2,6 +2,8 @@
 
 A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). It keeps the game's feel, fixes the original game's bugs, and adds the plays, controls and CPU smarts it was missing. The **2026 Season Edition** brings **all 138 FBS teams with 2026 rosters**, the 2026 conferences, and a full season mode with conference title games and the College Football Playoff.
 
+<img width="400" height="280" alt="Title screen, Elevated" src="images/title_elevated.png" /> <img width="400" height="280" alt="Title screen, 2026 Season Edition" src="images/title_2026_season.png" />
+
 - **Fixed fatigue system!** Every player tires from what he does on the field and recovers between plays. In the original game, ball carriers tired extremely quickly and barely recovered during a drive, so after one or two carries your best players were essentially unusable for the rest of the drive unless you called a timeout. This fix is why the mod was started, and on its own it drastically improves the game.
 - **The original game's bugs, fixed:** the wrong team kicking off after a 2-point try turnover, pitches that land behind fast backs, and a season sim that reads offense and defense backwards.
 - **More explosive plays:** ball carriers keep their speed longer on long runs and runs after the catch, so breakaway plays happen more often.
@@ -13,7 +15,6 @@ A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). 
 
 This repository contains BPS patches only, no ROM. You need your own copy of the game.
 
-<img width="400" height="280" alt="Title screen, Elevated" src="images/title_elevated.png" /> <img width="400" height="280" alt="Title screen, 2026 Season Edition" src="images/title_2026_season.png" />
 
 ## Contents
 
