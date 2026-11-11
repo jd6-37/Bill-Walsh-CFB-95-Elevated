@@ -219,7 +219,6 @@ ELEVATED appears in red under '95, so you can tell the patched game from the ori
 
 - 2026 Season Edition: each team plays one of the original game's 36 fight songs, so most teams don't play their own.
 - Played regular-season and exhibition games can still end in a tie, as in the original game.
-- The Genesis CFB Toolkit's editors don't support the 2026 Season Edition ROM.
 
 ## Controls
 
