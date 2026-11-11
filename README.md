@@ -11,7 +11,7 @@ A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). 
 - **More plays and pre-snap control:** 67 plays added from College Football USA '97 (the original game has 96 offensive plays), two all-new plays (RPO and HB SWING), a Flip Play tile on the play-call screen (in place of Instant Replay), pre-snap motion, flipping plays at the line, and defensive alignment shifts.
 - **6-button gamepad support:** true 5-receiver passing with the X and Y buttons, flips and shifts at the line, and pre-snap views of the play art, assignments and energy bars. With a 3-button gamepad the game plays as before.
 - **A smarter CPU:** four difficulty levels, more and smarter CPU audibles, more aggressive 4th downs, smarter defenses, and more.
-- **Quality-of-life improvements:** faster kickoff setups after scores, menu music on or off with X, and more.
+- **Quality-of-life improvements:** faster kickoff setups after scores, team OFF/DEF ratings on Game Setup, menu music on or off with X, and more.
 
 This repository contains BPS patches only, no ROM. You need your own copy of the game.
 
@@ -202,13 +202,14 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 - **Smarter 4th downs.** The CPU goes for it on 4th and short and more often in your territory, instead of almost always kicking. It still plays it safe late in a half and when leading late.
 - **Reworked CPU defenses.** 3-4, 4-3 and Multiple styles, Dime on 3rd and 11+, and some 4-4 in run situations. Nickel and Dime linebackers are picked by rating, and every team uses the same DT1/DT2 and MLB1/MLB2 roster layout.
 - **The CPU runs VEER** with its Option and Power offense styles. The original game never called VEER plays.
-- **Team OFF/DEF ratings on Game Setup**, under each team's logo, as modern-style overall ratings (OVR). In the Elevated edition they come from EA's original team ratings; in the 2026 Season Edition from the 2026 rosters.
-
-  <img width="400" height="280" alt="Game Setup with the OFF/DEF ratings and the Difficulty row set to Champion" src="images/game_setup.png" />
 
 ### Quality of life (Elevated)
 
 - **Faster kickoff setup.** After a score the players run to their kickoff spots much faster: about 5 seconds to the kick instead of 13.
+- **Team OFF/DEF ratings on Game Setup**, under each team's logo, as modern-style overall ratings (OVR). In the Elevated edition they come from EA's original team ratings; in the 2026 Season Edition from the 2026 rosters.
+
+  <img width="400" height="280" alt="Game Setup with the OFF/DEF ratings and the Difficulty row set to Champion" src="images/game_setup.png" />
+
 - **Menu music off or on.** Press X on a 6-button gamepad on the title screen, Game Setup or the season screens to turn the menu music off, and again to turn it back on. Fight songs and sound effects still play. The music is on again after a reset or power-off.
 
 ### Title screen (Elevated)
