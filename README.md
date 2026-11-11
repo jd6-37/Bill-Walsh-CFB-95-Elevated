@@ -151,7 +151,7 @@ A 138-team season needs 32 KB of save RAM (the original game has 8 KB). It works
 
 - **Pre-snap motion.** Send a back or receiver in motion before the snap: toward the middle he crosses the formation, toward the sideline he takes a short motion, and you can bring him back. Your selected defender follows him until you move the defender yourself, and CPU defenders in man coverage go with him.
 
-  <img width="800" alt="Pre-snap motion: the receiver picked for motion (left) and the same receiver crossing the formation, with his defender following (right)" src="images/motion.png" />
+  <img width="400" height="280" alt="Animation: a slot receiver goes in motion across the formation and his defender follows" src="images/motion.gif" />
 
 - **Line motion.** The end man on the line (a tight end or split end) can go in motion too, when a receiver off the line on his side can step up: he leaves the line and the receiver steps up to take his place.
 
