@@ -86,7 +86,7 @@ In the original game a ball carrier starts losing speed right away and is down t
 
 ### 2026 Season Edition with all 138 FBS teams
 
-<img width="800" alt="The 28 teams with new helmets, logos, wordmarks and uniforms" src="images/new_teams_2026.png" />
+<img width="800" alt="All 138 FBS teams: the 28 with new helmets, logos, wordmarks and uniforms, plus all 110 teams from College Football USA '97" src="images/new_teams_2026.png" />
 
 - **All 138 FBS teams of 2026:** the 110 teams from College Football USA '97, and 28 more with new helmets, logos, wordmarks and uniforms made for this mod (above). On Game Setup the teams are in alphabetical order; hold left or right to scroll fast.
 - **2026 conferences:** SEC (16 teams), Big Ten (18), ACC (17), Big 12 (16), American (14), Sun Belt (14), MAC (13), Mountain West (10), Conference USA (10), Pac-12 (8) and the Independents (Notre Dame, UConn).
