@@ -43,7 +43,7 @@ In my opinion, Bill Walsh College Football '95 for the Sega Genesis has the grea
 | `Bill_Walsh_College_Football_95_Fixed_Fatigue_v2_0_0.bps` | Only the fatigue fix. Original title screen. |
 | `Bill_Walsh_College_Football_95_No_Fatigue_v2_0_0.bps` | Only one change: energy never drops. Original title screen. |
 
-The patches are in the [`patches`](patches) folder. Both Elevated editions use Fixed Fatigue. Patches for older versions are attached to their [releases](https://github.com/jd6-37/Bill-Walsh-CFB-95-Elevated/releases). The [Genesis CFB Toolkit](https://genesis-cfb-toolkit.vercel.app) reads the list of patches from this repo (`patches.json`).
+The patches are in the [`patches`](patches) folder. Both Elevated editions use Fixed Fatigue. Patches for older versions are attached to their [releases](https://github.com/jd6-37/Bill-Walsh-CFB-95-Elevated/releases).
 
 ## Features
 
@@ -325,7 +325,7 @@ Patch files:
 - Season-sim fix (offense and defense ratings were read backwards) and team OFF/DEF ratings on Game Setup.
 - 2026 Season Edition: 11 teams from CF97, 2026 conferences, 2026 rosters from CFB 27 ratings, team styles, new Walsh Reports, CF97 logos for every team, new title art.
 - Title screen: ELEVATED.
-- The patches moved to the `patches` folder, with `patches.json` for the Genesis CFB Toolkit.
+- The patches moved to the `patches` folder.
 
 ### v1.0 (2026-11-06), first release
 - Released as *Bill Walsh College Football '95 Rebalanced*.
@@ -365,7 +365,6 @@ For anyone digging into the ROM (68000 addresses):
 - **2026 Season Edition**: a 4 MB ROM. Team tables from `0x218000` (OVRs, styles, menu order, end zones, fight songs, Walsh Report pointers), the Walsh Report text from `0x219000`, team data blocks from `0x230000`. 32 KB of save RAM on odd bytes (`0x200001`-`0x20FFFF`): only small copy routines below 2 MB switch it on, and the season screens work on a copy in RAM.
 - **Title screen**: the title image (`0x17C114`) is copied to `0x1F1000`, with the logo moved up and ELEVATED drawn in; the title code's two references to it (`0x078D70`, `0x078DA0`) point to the copy. In the 2026 Season Edition the portrait's cells and palette line 0 hold the new art.
 - **Checksum**: the EA checksum constant at `0x1E6430` and the Sega header checksum are recomputed.
-- **Patch list**: `patches.json` lists the released patches for the [Genesis CFB Toolkit](https://genesis-cfb-toolkit.vercel.app), whose Patch tab reads it and the `.bps` files straight from this repo's `main` branch. Update it with every release: the newest release goes first, with each patch's file, size, SHA-256 and the SHA-1 of the patched ROM. Older releases stay listed without a `file`, so the toolkit still recognizes their ROMs. Format: [docs/patches.md](https://github.com/jd6-37/Genesis-CFB-Toolkit/blob/main/docs/patches.md) in the toolkit's repo.
 
 ## Testing
 
