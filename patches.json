@@ -10,17 +10,17 @@
     {
       "id": "elevated",
       "label": "Elevated",
-      "about": "Every Elevated feature, including Fixed Fatigue, with the original teams and 1994 rosters."
+      "about": "Every Elevated feature, including Fixed Fatigue and the original-game fixes, with the original 36 teams and 1994 rosters."
     },
     {
       "id": "elevated-2026",
       "label": "Elevated: 2026 Season Edition",
-      "about": "Every Elevated feature, including Fixed Fatigue, plus the 2026 teams, conferences and rosters."
+      "about": "Every Elevated feature, including Fixed Fatigue and the original-game fixes, plus all 138 FBS teams with 2026 rosters and conferences and a new season mode with conference title games and the playoff. 4 MB ROM, 32 KB save RAM."
     },
     {
       "id": "fixes",
-      "label": "Fatigue fix and gameplay fixes",
-      "about": "Only the fatigue fix, more explosive plays and the 2-point conversion fix. Original teams, 1994 rosters and title screen."
+      "label": "Fatigue fix and bug fixes",
+      "about": "Only the fatigue fix and fixes for the original game's bugs: the 2-point conversion kickoff, pitches to fast backs and the season sim. No other gameplay changes. Original teams, 1994 rosters and title screen."
     },
     {
       "id": "fatigue",
@@ -42,6 +42,58 @@
   ],
   "releases": [
     {
+      "version": "v2.0.0",
+      "name": "Elevated v2.0.0",
+      "date": "2026-11-11",
+      "patches": [
+        {
+          "content": "elevated",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 Elevated v2.0.0",
+          "file": "patches/Bill_Walsh_College_Football_95_Elevated_v2_0_0.bps",
+          "size": 136764,
+          "sha256": "107772c3c1ec9453e7e5957afbfc969c00a4f6a3a205b909aed080ca514fe911",
+          "rom": "dcbfd7c650078e69ad6f899eaa0ef82764f413bc"
+        },
+        {
+          "content": "elevated-2026",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 Elevated: 2026 Season Edition v2.0.0",
+          "file": "patches/Bill_Walsh_College_Football_95_Elevated_2026_Season_v2_0_0.bps",
+          "size": 407578,
+          "sha256": "2558f4eb06443b4c954c8eaf83aed8e15646659e9d2389b860ee30288e3794b2",
+          "rom": "1d75b32792b3cdc4266c3480419bb720755856c4"
+        },
+        {
+          "content": "fixes",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 v2.0.0 (Fixed Fatigue + Fixes)",
+          "file": "patches/Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v2_0_0.bps",
+          "size": 632,
+          "sha256": "20b0c5d526666bb9a0aa27f8e0ed5468446be6e1b1d2f6d4de697a214904a996",
+          "rom": "c0997d06f32faa96d553862561550e51bbde8cec"
+        },
+        {
+          "content": "fatigue",
+          "fatigue": "fixed",
+          "name": "Bill Walsh College Football '95 v2.0.0 (Fixed Fatigue)",
+          "file": "patches/Bill_Walsh_College_Football_95_Fixed_Fatigue_v2_0_0.bps",
+          "size": 331,
+          "sha256": "73c28af91eec51b98300e95651a7f7695a675054f3b6dc3e21260dcff8f8249b",
+          "rom": "433ee808e77dc4254ac520682bad9e647584ae92"
+        },
+        {
+          "content": "fatigue",
+          "fatigue": "none",
+          "name": "Bill Walsh College Football '95 v2.0.0 (No Fatigue)",
+          "file": "patches/Bill_Walsh_College_Football_95_No_Fatigue_v2_0_0.bps",
+          "size": 44,
+          "sha256": "9005796a80bf7c397f2039b6386454ef7b37c0570c2dc5bda33282964b452d73",
+          "rom": "8ce1c5e64ee7cad54cac5df76470fe1ae994698c"
+        }
+      ]
+    },
+    {
       "version": "v1.1.0",
       "name": "Elevated v1.1.0",
       "date": "2026-11-09",
@@ -50,45 +102,30 @@
           "content": "elevated",
           "fatigue": "fixed",
           "name": "Bill Walsh College Football '95 Elevated v1.1.0",
-          "file": "patches/Bill_Walsh_College_Football_95_Elevated_v1_1_0.bps",
-          "size": 131603,
-          "sha256": "f5effe877e11a83c6cf3d705f09ff4e2589c9b07715e3c832288e2e03ada8587",
           "rom": "04ea053c6c868c59991d183bef20aee81c0e0edf"
         },
         {
           "content": "elevated-2026",
           "fatigue": "fixed",
           "name": "Bill Walsh College Football '95 Elevated: 2026 Season Edition v1.1.0",
-          "file": "patches/Bill_Walsh_College_Football_95_Elevated_2026_Season_v1_1_0.bps",
-          "size": 190074,
-          "sha256": "e4db5a8abef15900ecc664c8d4aff1e8826fe242e60e48de1d72b0acf5b314ce",
           "rom": "7ac949a3af6e172c615b3d0b4eb1dbff9f52a39b"
         },
         {
           "content": "fixes",
           "fatigue": "fixed",
           "name": "Bill Walsh College Football '95 v1.1.0 (Fixed Fatigue + Fixes)",
-          "file": "patches/Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v1_1_0.bps",
-          "size": 567,
-          "sha256": "b517a95c857d281ab872531b45a222c6cc1512c8f322671bfb4665ac9711bc8e",
           "rom": "1ee2aeb1fd2a09080dc90e8f5728e5c9cfe03907"
         },
         {
           "content": "fatigue",
           "fatigue": "fixed",
           "name": "Bill Walsh College Football '95 v1.1.0 (Fixed Fatigue)",
-          "file": "patches/Bill_Walsh_College_Football_95_Fixed_Fatigue_v1_1_0.bps",
-          "size": 331,
-          "sha256": "73c28af91eec51b98300e95651a7f7695a675054f3b6dc3e21260dcff8f8249b",
           "rom": "433ee808e77dc4254ac520682bad9e647584ae92"
         },
         {
           "content": "fatigue",
           "fatigue": "none",
           "name": "Bill Walsh College Football '95 v1.1.0 (No Fatigue)",
-          "file": "patches/Bill_Walsh_College_Football_95_No_Fatigue_v1_1_0.bps",
-          "size": 44,
-          "sha256": "9005796a80bf7c397f2039b6386454ef7b37c0570c2dc5bda33282964b452d73",
           "rom": "8ce1c5e64ee7cad54cac5df76470fe1ae994698c"
         }
       ]
