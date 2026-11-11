@@ -1,6 +1,6 @@
 # Bill Walsh College Football '95 Elevated
 
-A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). It keeps the game's feel, fixes the original game's bugs, and adds the plays, controls and CPU smarts it was missing. The **2026 Season Edition** brings **all 138 FBS teams with 2026 rosters**, the 2026 conferences, and a full season mode with conference title games and the College Football Playoff.
+A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). It keeps everything that made the original fun to play, fixes its bugs, and adds subtle gameplay tweaks, more plays, a smarter CPU, and new controls that put the 6-button gamepad’s X, Y and Z buttons to use for the first time. The **2026 Season Edition** brings **all 138 FBS teams with 2026 rosters**, the 2026 conferences, and a full season mode with conference title games and the College Football Playoff.
 
 **[Download the latest release here →](https://github.com/jd6-37/Bill-Walsh-CFB-95-Elevated/releases/latest)** (scroll down to the Assets section)
 
