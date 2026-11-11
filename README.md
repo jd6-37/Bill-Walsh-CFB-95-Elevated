@@ -2,13 +2,14 @@
 
 A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive, USA). It keeps the game's feel, fixes the original game's bugs, and adds the plays, controls, CPU smarts and season mode it was missing.
 
-- **Fatigue that works.** Every player tires from what he does on the field and recovers between plays. In the original game, running backs wore out after a few carries and only a timeout brought them back.
-- **The original game's bugs, fixed:** breakaway runs that slow to a crawl, the wrong team kicking off after a 2-point try turnover, pitches that land behind fast backs, and a season sim that reads offense and defense backwards.
+- **Fixed fatigue system!** Every player tires from what he does on the field and recovers between plays. In the original game, ball carriers tired extremely quickly and barely recovered during a drive, so after one or two carries your best players were essentially unusable for the rest of the drive unless you called a timeout. This fix is why the mod was started, and on its own it drastically improves the game.
+- **The original game's bugs, fixed:** the wrong team kicking off after a 2-point try turnover, pitches that land behind fast backs, and a season sim that reads offense and defense backwards.
+- **More explosive plays:** ball carriers keep their speed longer on long runs and runs after the catch, so breakaway plays happen more often.
 - **All 138 FBS teams** in the 2026 Season Edition, with 2026 rosters and conferences and a new season mode: random or real 2026 schedules, conference title games, and a 12-team College Football Playoff (or 24, 4, BCS 2 or none).
-- **More plays and pre-snap control:** 67 plays from College Football USA '97, an RPO and HB SWING, Flip Play, pre-snap motion (line motion too), flips at the line, and defensive shifts.
-- **6-button gamepad support:** passes to 5 receivers, flips and shifts at the line, and pre-snap play art, assignments and energy bars. With a 3-button gamepad the game plays as before.
-- **A smarter CPU:** four difficulty levels, smarter 4th downs and defenses, audibles that are harder to read, and a defense that answers your flip.
-- **Less waiting:** faster kickoff setups after scores, and the menu music off or on with X.
+- **More plays and pre-snap control:** 67 plays added from College Football USA '97 (the original game has 96 offensive plays), two all-new plays (RPO and HB SWING), a Flip Play tile on the play-call screen (in place of Instant Replay), pre-snap motion, flipping plays at the line, and defensive alignment shifts.
+- **6-button gamepad support:** true 5-receiver passing with the X and Y buttons, flips and shifts at the line, and pre-snap views of the play art, assignments and energy bars. With a 3-button gamepad the game plays as before.
+- **A smarter CPU:** four difficulty levels, more and smarter CPU audibles, more aggressive 4th downs, smarter defenses, and more.
+- **Quality-of-life improvements:** faster kickoff setups after scores, menu music on or off with X, and more.
 
 This repository contains BPS patches only, no ROM. You need your own copy of the game.
 
@@ -39,7 +40,7 @@ In my opinion, Bill Walsh College Football '95 for the Sega Genesis has the grea
 |---|---|
 | `Bill_Walsh_College_Football_95_Elevated_v2_0_0.bps` | **Elevated.** Every feature below, with the original 36 teams, their 1994 rosters and the original season mode. Title screen: ELEVATED. |
 | `Bill_Walsh_College_Football_95_Elevated_2026_Season_v2_0_0.bps` | **Elevated: 2026 Season Edition.** Every feature below, plus all 138 FBS teams with 2026 rosters and conferences, and the new season mode. Title screen: ELEVATED, 2026 Season Ed. A 4 MB ROM with 32 KB of save RAM (see [Saves](#saves)). |
-| `Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v2_0_0.bps` | The fatigue fix and fixes for the original game's bugs (run slowdown, 2-point try kickoff, pitches to fast backs). No other gameplay changes. Original title screen. |
+| `Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v2_0_0.bps` | The fatigue fix and fixes for the original game's bugs (2-point try kickoff, pitches to fast backs, season sim). No other gameplay changes. Original title screen. |
 | `Bill_Walsh_College_Football_95_Fixed_Fatigue_v2_0_0.bps` | Only the fatigue fix. Original title screen. |
 | `Bill_Walsh_College_Football_95_No_Fatigue_v2_0_0.bps` | Only one change: energy never drops. Original title screen. |
 
@@ -52,25 +53,13 @@ The patches are in the [`patches`](patches) folder. Both Elevated editions use F
 | Fix | Elevated editions | Fixed Fatigue + Fixes | Fixed Fatigue |
 |---|:-:|:-:|:-:|
 | [Fatigue](#fatigue) | ✓ | ✓ | ✓ |
-| [Breakaway runs slow down too fast](#more-explosive-plays) | ✓ | ✓ | |
 | [Wrong team kicks off after a 2-point try turnover](#2-point-conversion-kickoff) | ✓ | ✓ | |
 | [Pitches land behind fast backs](#pitches-to-fast-backs) | ✓ | ✓ | |
-| [Season sim reads offense and defense backwards](#season-sim) | ✓ | | |
+| [Season sim reads offense and defense backwards](#season-sim) | ✓ | ✓ | |
 
 #### Fatigue
 
-- **Everyone tires, from what he does on the field.** In the original game a running back loses about 27% energy per carry and barely recovers during a drive; only a timeout brings players back. Now every player's energy drops with what he does while the play is live: the distance he runs, the time he's locked in a block, and hits. Everyone recovers a quarter of his fatigue at each snap, and timeouts and halftime still reset everyone to 100%.
-- In CPU-vs-CPU test games most players stayed between 92% and 97% through a drive, the lowest seen was 76%, and a running back was at about 90% after one carry and 86% after two straight carries.
-
-#### More explosive plays
-
-In the original game a ball carrier starts losing speed right away and is down to lineman speed after a few seconds, so breakaway runs crawl after a few yards. The slowdown on long runs and runs after the catch is now reduced, for human- and CPU-controlled teams. The ball carrier keeps full speed for about the first 1.5 seconds, then slows down, faster the more tired he is:
-
-| Energy (roster screen) | Slowdown after the first 1.5 s |
-|---|---|
-| 90% or higher | about 2/3 as fast as the original game |
-| 75–89% | about 3/4 as fast as the original game |
-| below 75% | same as the original game |
+**Everyone tires, from what he does on the field.** In the original game a running back loses about 27% energy per carry and barely recovers during a drive; only a timeout brings players back. Now every player's energy drops with what he does while the play is live: the distance he runs, the time he's locked in a block, and hits. Everyone recovers a quarter of his fatigue at each snap, and timeouts and halftime still reset everyone to 100%.
 
 #### 2-point conversion kickoff
 
@@ -82,9 +71,19 @@ The game aims a pitch where the back will be if he keeps his speed. On the optio
 
 #### Season sim
 
-When the original game simulated CPU-vs-CPU season games, it read each team's offense and defense ratings backwards, so a great defense scored points and a great offense kept the other team's score down. Fixed in both Elevated editions.
+When the original game simulated CPU-vs-CPU season games, it read each team's offense and defense ratings backwards, so a great defense scored points and a great offense kept the other team's score down. Fixed in the Elevated editions and Fixed Fatigue + Fixes.
 
-### 2026 Season Edition
+### More explosive plays (Elevated)
+
+In the original game a ball carrier starts losing speed right away and is down to lineman speed after a few seconds, so breakaway runs crawl after a few yards. Some slowdown is part of the game's design, but it's too much. The Elevated editions reduce it on long runs and runs after the catch, for human- and CPU-controlled teams, so explosive plays happen more often. The ball carrier keeps full speed for about the first 1.5 seconds, then slows down, faster the more tired he is:
+
+| Energy (roster screen) | Slowdown after the first 1.5 s |
+|---|---|
+| 90% or higher | about 2/3 as fast as the original game |
+| 75–89% | about 3/4 as fast as the original game |
+| below 75% | same as the original game |
+
+### 2026 Season Edition with all 138 FBS teams
 
 <img width="800" alt="The 28 teams with new helmets, logos, wordmarks and uniforms" src="images/new_teams_2026.png" />
 
@@ -97,7 +96,7 @@ When the original game simulated CPU-vs-CPU season games, it read each team's of
 - **Team ratings from the 2026 rosters:** OFF/DEF ratings on Game Setup and Team Schedules, also used by the season sim.
 - **Walsh Reports for all 138 teams**, written for 2026. Each offense and defense scouting report names the key players with their jersey numbers (the rosters have no names).
 - **New title art:** Malachi Toney of Miami replaces Bill Walsh's portrait.
-- **Pause menu:** Timeout comes right after Resume Game and shows how many you have left ("Timeout - 2 left").
+- **Pause menu:** Timeout has moved up to right below Resume Game, and it now shows how many you have left ("Timeout - 2 left").
 - **Jersey numbers** under the players show single digits without a leading zero.
 
 #### Season mode
@@ -206,7 +205,7 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 
   <img width="400" height="280" alt="Game Setup with the OFF/DEF ratings and the Difficulty row set to Champion" src="images/game_setup.png" />
 
-### Less waiting (Elevated)
+### Quality of life (Elevated)
 
 - **Faster kickoff setup.** After a score the players run to their kickoff spots much faster: about 5 seconds to the kick instead of 13.
 - **Menu music off or on.** Press X on a 6-button gamepad on the title screen, Game Setup or the season screens to turn the menu music off, and again to turn it back on. Fight songs and sound effects still play. The music is on again after a reset or power-off.
@@ -292,7 +291,7 @@ RZWB-66VG+BD7A-NF66+FS7A-NYY8+AD7A-NY7C+JD7T-NH7C
 |---|---|---|---|---|
 | Elevated | 2,097,152 bytes | `D2B7B8B1` | `dcbfd7c650078e69ad6f899eaa0ef82764f413bc` | `128C` |
 | Elevated: 2026 Season Edition | 4,194,304 bytes | `BAE6B048` | `1d75b32792b3cdc4266c3480419bb720755856c4` | `4802` |
-| Fixed Fatigue + Fixes | 2,097,152 bytes | `A22880C5` | `183ab53828ec3c2395551cc97c40c551b1a5365d` | `C6C5` |
+| Fixed Fatigue + Fixes | 2,097,152 bytes | `D7DA052E` | `c0997d06f32faa96d553862561550e51bbde8cec` | `EA9C` |
 | Fixed Fatigue | 2,097,152 bytes | `FB633059` | `433ee808e77dc4254ac520682bad9e647584ae92` | `76E7` |
 | No Fatigue | 2,097,152 bytes | `46E349F8` | `8ce1c5e64ee7cad54cac5df76470fe1ae994698c` | `B11D` |
 
@@ -302,7 +301,7 @@ Patch files:
 |---|---|---|
 | `Bill_Walsh_College_Football_95_Elevated_v2_0_0.bps` | 136,764 bytes | `107772c3c1ec9453e7e5957afbfc969c00a4f6a3a205b909aed080ca514fe911` |
 | `Bill_Walsh_College_Football_95_Elevated_2026_Season_v2_0_0.bps` | 407,578 bytes | `2558f4eb06443b4c954c8eaf83aed8e15646659e9d2389b860ee30288e3794b2` |
-| `Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v2_0_0.bps` | 780 bytes | `feba6073ba8a071e6ea598dbf7588a375a4688f25d26b51c281ce56dd8818ca1` |
+| `Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v2_0_0.bps` | 632 bytes | `20b0c5d526666bb9a0aa27f8e0ed5468446be6e1b1d2f6d4de697a214904a996` |
 | `Bill_Walsh_College_Football_95_Fixed_Fatigue_v2_0_0.bps` | 331 bytes | `73c28af91eec51b98300e95651a7f7695a675054f3b6dc3e21260dcff8f8249b` |
 | `Bill_Walsh_College_Football_95_No_Fatigue_v2_0_0.bps` | 44 bytes | `9005796a80bf7c397f2039b6386454ef7b37c0570c2dc5bda33282964b452d73` |
 
@@ -312,6 +311,7 @@ Patch files:
 - **2026 Season Edition, rebuilt:** all 138 FBS teams (28 with new art), the 2026 conferences, rosters from CFB 27's ratings (Week 9 update), team styles and Walsh Reports for every team. New season mode: random or real 2026 schedules, conference title games, CFP 12, CFP 24, CFP 4, BCS 2 or no postseason, a CFP Bracket screen, Team Schedules for any team, Rankings with every conference, and Season Stats over all 138 teams. 4 MB ROM with 32 KB of save RAM (seasons saved with v1.1.0 start over). The pause menu shows the timeouts left, and single-digit jersey numbers have no leading zero.
 - **Both Elevated editions:** defensive shifts and defense flips at the line (6-button), a CPU defense that answers your flip, line motion, SET FORM with Y on the play-call screen, faster kickoff setups, harder-to-read CPU audibles, and the menu music off or on with X.
 - **Pitches to fast backs** are re-aimed in flight (Elevated editions and Fixed Fatigue + Fixes).
+- **Fixed Fatigue + Fixes** now has only fixes for the original game's bugs: it also gets the season-sim fix, and the run-speed change for more explosive plays is now in the Elevated editions only.
 - Fixes for v1.1.0 bugs: a delay of game or timeout after a flip at the line left the next play flipped; with the ball on the far hash, a CPU man defender could run across the field when your receiver went in motion.
 - Fixed Fatigue and No Fatigue are the same as in v1.1.0.
 
@@ -346,7 +346,7 @@ For anyone digging into the ROM (68000 addresses):
   - Drain while the play is live: a hook at the snap (`0x06D11E`) and one in the per-frame player loop (`0x067E60`) add fatigue for each player from his speed every frame, his time in blocks, and the game's own events (tackles, route ends, jukes) at a quarter of their original cost.
   - Recovery: at each snap every player recovers a quarter of his fatigue; the roster screen no longer adds recovery. Code at `0x1E81E0`.
   - No Fatigue: AddFatigue returns at once (`0x06FA94` → `rts`).
-- **Run slowdown**:
+- **More explosive plays** (Elevated editions):
   - In the original, a random tick at `0x075EC0` costs the ball carrier 1 speed point plus 10 fatigue while his speed is above 6.
   - The tick is hooked at `0x075EDE`. A snap hook at `0x06FB50` stores the original-game speed in two unused bytes of the player object (`$7E/$7F`), so fatigue builds exactly as before while the actual speed loss follows the table above.
   - Code at `0x1F0100`.
@@ -383,7 +383,7 @@ For anyone digging into the ROM (68000 addresses):
   - All new code is scanned for word or long accesses to odd addresses, which crash a real Genesis but not the test emulator.
 - Limits:
   - The 2-point fix was verified by triggering the game's own turnover routine during conversion tries, not with a recorded real fumble.
-  - In the 1994 Elevated edition the season-sim fix was checked in the code (the routine is only used by the sim).
+  - In the 1994 Elevated edition and Fixed Fatigue + Fixes, the season-sim fix was checked in the code (the routine is only used by the sim).
 
 ## Credits
 

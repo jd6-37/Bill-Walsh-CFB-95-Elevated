@@ -19,8 +19,8 @@
     },
     {
       "id": "fixes",
-      "label": "Fatigue fix and gameplay fixes",
-      "about": "Only the fatigue fix and fixes for the original game's bugs: the run slowdown, the 2-point conversion kickoff and pitches to fast backs. Original teams, 1994 rosters and title screen."
+      "label": "Fatigue fix and bug fixes",
+      "about": "Only the fatigue fix and fixes for the original game's bugs: the 2-point conversion kickoff, pitches to fast backs and the season sim. No other gameplay changes. Original teams, 1994 rosters and title screen."
     },
     {
       "id": "fatigue",
@@ -69,9 +69,9 @@
           "fatigue": "fixed",
           "name": "Bill Walsh College Football '95 v2.0.0 (Fixed Fatigue + Fixes)",
           "file": "patches/Bill_Walsh_College_Football_95_Fixed_Fatigue_Fixes_v2_0_0.bps",
-          "size": 780,
-          "sha256": "feba6073ba8a071e6ea598dbf7588a375a4688f25d26b51c281ce56dd8818ca1",
-          "rom": "183ab53828ec3c2395551cc97c40c551b1a5365d"
+          "size": 632,
+          "sha256": "20b0c5d526666bb9a0aa27f8e0ed5468446be6e1b1d2f6d4de697a214904a996",
+          "rom": "c0997d06f32faa96d553862561550e51bbde8cec"
         },
         {
           "content": "fatigue",
