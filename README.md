@@ -210,6 +210,7 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 
   <img width="400" height="280" alt="Game Setup with the OFF/DEF ratings and the Difficulty row set to Champion" src="images/game_setup.png" />
 
+- **SET FORM** (6-button gamepad). Press Y on the play-call screen to go back to the formations, on offense and defense.
 - **Menu music off or on.** Press X on a 6-button gamepad on the title screen, Game Setup or the season screens to turn the menu music off, and again to turn it back on. Fight songs and sound effects still play. The music is on again after a reset or power-off.
 
 ### Title screen (Elevated)
