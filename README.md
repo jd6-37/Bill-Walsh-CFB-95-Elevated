@@ -49,6 +49,8 @@ The patches are in the [`patches`](patches) folder. Both Elevated editions use F
 
 ## Features
 
+The original-game fixes below are in the patches as shown in their table. Everything else is in both Elevated editions, except the 2026 Season Edition section, which is that edition only.
+
 ### Original-game fixes
 
 | Fix | Elevated editions | Fixed Fatigue + Fixes | Fixed Fatigue |
@@ -74,7 +76,7 @@ The game aims a pitch where the back will be if he keeps his speed. On the optio
 
 When the original game simulated CPU-vs-CPU season games, it read each team's offense and defense ratings backwards, so a great defense scored points and a great offense kept the other team's score down. Fixed in the Elevated editions and Fixed Fatigue + Fixes.
 
-### More explosive plays (Elevated)
+### More explosive plays
 
 In the original game a ball carrier starts losing speed right away and is down to lineman speed after a few seconds, so breakaway runs crawl after a few yards. Some slowdown is part of the game's design, but it's too much. The Elevated editions reduce it on long runs and runs after the catch, for human- and CPU-controlled teams, so explosive plays happen more often. The ball carrier keeps full speed for about the first 1.5 seconds, then slows down, faster the more tired he is:
 
@@ -136,7 +138,7 @@ In the original game a ball carrier starts losing speed right away and is down t
 
 A 138-team season needs 32 KB of save RAM (the original game has 8 KB). It works in RetroArch (Genesis Plus GX) and on a Mega Everdrive Pro. Seasons saved with the v1.1.0 2026 Season Edition don't carry over: start a new season.
 
-### Plays (Elevated)
+### Plays
 
 - **67 offensive plays from College Football USA '97**, added as new rows on the existing formation pages, with play art. The CPU calls them too. A few share a name, one to each side, as they do in CF97 (for example two I-FORM HB SWEEPs).
 - **Two new Shotgun plays:**
@@ -155,7 +157,7 @@ A 138-team season needs 32 KB of save RAM (the original game has 8 KB). It works
 
 - **Line motion.** The end man on the line (a tight end or split end) can go in motion too, when a receiver off the line on his side can step up: he leaves the line and the receiver steps up to take his place.
 
-### 6-button gamepad (Elevated)
+### 6-button gamepad
 
 These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 
@@ -163,7 +165,7 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 
   <img width="400" height="280" alt="Pass play with the A, B, C, X and Y receiver icons" src="images/xy_passing.png" />
 
-- **Flip at the line.** Open the audible menu with A, then press X: the play flips and the players run to their mirrored spots. A CPU defense usually flips with you (see [CPU and difficulty](#cpu-and-difficulty-elevated)).
+- **Flip at the line.** Open the audible menu with A, then press X: the play flips and the players run to their mirrored spots. A CPU defense usually flips with you (see [CPU and difficulty](#cpu-and-difficulty)).
 
   <img width="400" height="280" alt="Animation: the offense flips at the line and the CPU defense realigns to match" src="images/flip_defense.gif" />
 
@@ -186,7 +188,7 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 
     <img width="400" height="280" alt="Z: energy bars over every player" src="images/presnap_energy.png" />
 
-### CPU and difficulty (Elevated)
+### CPU and difficulty
 
 - **Difficulty row on Game Setup:**
 
@@ -203,7 +205,7 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 - **Reworked CPU defenses.** 3-4, 4-3 and Multiple styles, Dime on 3rd and 11+, and some 4-4 in run situations. Nickel and Dime linebackers are picked by rating, and every team uses the same DT1/DT2 and MLB1/MLB2 roster layout.
 - **The CPU runs VEER** with its Option and Power offense styles. The original game never called VEER plays.
 
-### Quality of life (Elevated)
+### Quality of life
 
 - **Faster kickoff setup.** After a score the players run to their kickoff spots much faster: about 5 seconds to the kick instead of 13.
 - **Team OFF/DEF ratings on Game Setup**, under each team's logo, as modern-style overall ratings (OVR). In the Elevated edition they come from EA's original team ratings; in the 2026 Season Edition from the 2026 rosters.
@@ -213,7 +215,7 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 - **SET FORM** (6-button gamepad). Press Y on the play-call screen to go back to the formations, on offense and defense.
 - **Menu music off or on.** Press X on a 6-button gamepad on the title screen, Game Setup or the season screens to turn the menu music off, and again to turn it back on. Fight songs and sound effects still play. The music is on again after a reset or power-off.
 
-### Title screen (Elevated)
+### Title screen
 
 ELEVATED appears in red under '95, so you can tell the patched game from the original at a glance (plus "2026 Season Ed." in the 2026 Season Edition). The three other patches keep the original title screen. Every patched ROM has the game's built-in checksum corrected, so none needs a Game Genie master code.
 
