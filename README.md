@@ -276,7 +276,6 @@ These need a 6-button gamepad. With a 3-button gamepad the game plays as before.
 - **Pause menu:** Resume Game, then Timeout with how many you have left ("Timeout - 2 left"), then Team Rosters.
 - **New default audibles** for every team in a new save: offense I-Form Trp. Opt. R., I-Form WR Outs, Shotgun Deep Outs; defense 4-4 Jet Blitz, 4-3 Medium Zone, Nickel Full Zone. Set Audibles still changes them.
 - **Menu music off or on.** Press X on a 6-button gamepad on the title screen, Game Setup or the season screens. Fight songs and sound effects still play. The setting is saved, and a music note on screen shows it.
-- **Walsh Report:** a blank line between the offense and defense paragraphs.
 - **Jersey numbers** under the players and in the recaps show single digits without a leading zero.
 - **A medium skin tone** for every team's players.
 
@@ -292,35 +291,7 @@ ELEVATED appears in red under '95, so you can tell the patched game from the ori
 
 ## Controls
 
-| When | Button | What it does |
-|---|---|---|
-| Title screen, Game Setup, season screens | X (6-button) | Menu music off / on |
-| Game Setup | Left/Right on the Difficulty row | Normal, Smart, Elite, Champion |
-| | Z (6-button) | Team Rosters (Left/Right: teams, C: names / ratings, Z or Start: back) |
-| Controller select screen | Y (6-button) | Uniform picker for the team above |
-| | Z (6-button) or B | Back to Game Setup |
-| Play-call screen | C on the FLIP PLAY tile, or X (6-button) | Flip the play (the tile turns yellow); again to unflip |
-| | Y (6-button) | SET FORM: back to the formations |
-| | C on the SWAP tile, or Z (6-button) | Swap HB1 / HB2 (offense) or MLB1 / MLB2 (defense) |
-| | C on SWAP WR1/2 (offense) | Swap the split end and flanker for the game |
-| Before the snap, offense | Up/Down | Pick a motion man (a marker with arrows shows under him) |
-| | Left/Right | Send him in motion; press the other way to bring him back |
-| | A, then X (6-button) | Flip the play at the line |
-| | Y (6-button), receiver, route | Hot route (Z cancels) |
-| | Hold X (6-button) | Play art, receiver numbers and routes |
-| Before the snap, defense | Tap X, Z or Y (6-button) | Pick a shift: line, linebackers or safeties |
-| | Then Left/Right | Shift the group a step that way (up to 2) |
-| | Then Down/Up | Line and linebackers: pinch / spread. Safeties: step up / back |
-| | The same button again | Back to the call's alignment |
-| | A, then X (6-button) | Flip your alignment; again to flip back |
-| | Hold X (6-button) | Defensive call art and assignments |
-| Before the snap, either side | Hold Z (6-button) | Energy bars |
-| After the snap, QB | C, then A/B/C | Pass to receivers 1-3, as in the original game |
-| | C, then X/Y (6-button) | Pass to receivers 4-5 |
-| Ball carrier | Hold Y (6-button) | Truck, again and again |
-| Option and RPO plays | C (option) / B within about 1 second of the snap (RPO) | Pitch to the back |
-| Team Rosters | C | Names / ratings |
-| Team Schedules | C | All of the team's games to HOLD or CPU |
+Every button and control is in the [online manual](https://www.bw95mod.com/manual).
 
 **6-button gamepad in RetroArch (Genesis Plus GX):** the patched ROMs tell the emulator they support 6-button gamepads. If X, Y and Z do nothing, set *Quick Menu → Controls → Port 1 Controls → Device Type* to *MD Joypad 6 Button*.
 
