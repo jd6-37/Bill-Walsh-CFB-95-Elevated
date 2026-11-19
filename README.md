@@ -4,6 +4,8 @@ A mod for **Bill Walsh College Football '95** (Sega Genesis / Mega Drive). It ke
 
 **[Download the latest release here →](https://github.com/jd6-37/Bill-Walsh-CFB-95-Elevated/releases/latest)** (scroll down to the Assets section)
 
+**Website: [bw95mod.com](https://bw95mod.com)**: the manual, the Dynasty app and the Mod Toolkit.
+
 <img width="400" height="280" alt="Title screen, 1994 Season Edition" src="images/title_1994_season.png" /> <img width="400" height="280" alt="Title screen, 2026 Season Edition" src="images/title_2026_season.png" />
 
 - **Fixed fatigue system!** Every player tires from what he does on the field and recovers between plays. In the original game, ball carriers tired extremely quickly and barely recovered during a drive, so after one or two carries your best players were essentially unusable for the rest of the drive unless you called a timeout. This fix is why the mod was started, and on its own it drastically improves the game.
@@ -165,7 +167,7 @@ Alabama '78, Alabama '09, Auburn '83, Boston Col. '84, BYU '84, Clemson '81, Cle
 
 ### Dynasty
 
-Play season after season with the **Dynasty app** on the Elevated site: it reads your save and ROM after a season, runs the offseason (graduation, recruiting, the transfer portal in 2026, progression) and writes a new season ROM. Season mode then plays the app's rosters, names, ratings, schedule, preseason poll and impact players, while Exhibition keeps the built-in rosters. A ROM without dynasty data plays as before. Both editions.
+Play season after season with the **[Dynasty app](https://bw95mod.com/dynasty)** on [bw95mod.com](https://bw95mod.com): it reads your save and ROM after a season, runs the offseason (graduation, recruiting, the transfer portal in 2026, progression) and writes a new season ROM. Season mode then plays the app's rosters, names, ratings, schedule, preseason poll and impact players, while Exhibition keeps the built-in rosters. A ROM without dynasty data plays as before. Both editions.
 
 #### Saves
 
